@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Account" asp-action="DoLogin" method="get">
+    <div class="form-group">
+        <label for="Login">Login</label>
+        <input type="text" class="form-control" id="Login" name="Login" aria-describedby="emailHelp" placeholder="Enter your login">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your login and password with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
