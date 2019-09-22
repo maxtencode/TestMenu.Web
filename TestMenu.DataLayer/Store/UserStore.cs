@@ -28,4 +28,4 @@ namespace TestMenu.DataLayer.Store
         ApplicationUser GetUser(LoginModel loginModel);
     }
 }
-//проверка
+//проверка связи
