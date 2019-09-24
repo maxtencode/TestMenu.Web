@@ -4,12 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMenu.Web", "TestMenu.Web\TestMenu.Web.csproj", "{0FF7FF0C-4718-4144-9115-CC047181470A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76FBA5AA-0945-4CEB-B154-730EB2F22E37} = {76FBA5AA-0945-4CEB-B154-730EB2F22E37}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMenu.DataLayer", "TestMenu.DataLayer\TestMenu.DataLayer.csproj", "{63864F32-C888-42E2-ADD5-E6A4D459507D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMenu.Models", "TestMenu.Models\TestMenu.Models.csproj", "{76FBA5AA-0945-4CEB-B154-730EB2F22E37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMenu.BusinessLayer", "TestMenu.BusinessLayer\TestMenu.BusinessLayer.csproj", "{3D45B035-62CE-4518-BCE7-DB8B375623C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMenu.BusinessLayer", "TestMenu.BusinessLayer\TestMenu.BusinessLayer.csproj", "{3D45B035-62CE-4518-BCE7-DB8B375623C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using TestMenu.BusinessLayer;
 using TestMenu.Models;
+using TestMenu.Models.Models;
 
 namespace TestMenu.Web.Controllers
 {
@@ -17,11 +19,23 @@ namespace TestMenu.Web.Controllers
             return View();
         }
 
-        public IActionResult DoLogin(LoginModel loginModel)
-        {
-            var q = _authManager.Login(loginModel, HttpContext);
+        //public IActionResult DoLogin(LoginModel loginModel)
+        //{
+        //    var q = _authManager.Login(loginModel, HttpContext);
 
-            return Ok();
+        //    return Ok();
+        //}
+
+        [HttpGet]
+        public ViewResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register(RegisterViewModel model)
+        {
+            return View();
         }
     }
 }
